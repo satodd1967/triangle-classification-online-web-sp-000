@@ -27,7 +27,7 @@ class Triangle
     puts ""
   end
 
-binding.pry
+# binding.pry
 
 end
 
