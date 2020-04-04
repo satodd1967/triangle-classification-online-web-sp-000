@@ -13,7 +13,7 @@ class Triangle
       if self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0 || (self.s1 + self.s2 < s3) || (self.s1 + self.s3 < s2) || (self.s2 + self.s3 < s1)
         begin
         raise TriangleError
-      rescue PartnerError => error
+      rescue TriangleError => error
           puts error.message
       elsif (self.s1 == self.s2) && (self.s1 == self.s3)
         :equilateral
@@ -27,6 +27,7 @@ class Triangle
   end
   
   class TriangleError < StandardError
+    puts ""
   end
 
 binding.pry
