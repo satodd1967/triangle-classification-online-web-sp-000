@@ -10,7 +10,7 @@ class Triangle
   end
     
     def kind
-      if self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0 || 
+      if self.s1 <= 0 || self.s2 <= 0 || self.s3 <= 0 || self.s1
         puts "illegal"
       if (self.s1 == self.s2) && (self.s1 == self.s3)
         :equilateral
